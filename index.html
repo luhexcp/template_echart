@@ -1,0 +1,84 @@
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" /> 
+  <title>ECharts模板可视化</title> 
+  <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+  <style type="text/css">
+.timeBox>*{
+  display: inline-block;
+}
+.row{
+  margin: 0;
+}
+.row{
+  margin-left: -4px;
+}
+input[type="image"], input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] {
+    width: 20px;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+}
+ .modal-dialog {  
+    margin-left: 20%;  
+} 
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999
+  }
+  body{
+    padding-top: 72px;
+
+  }
+</style> 
+ </head> 
+ <body> 
+  <nav class="navbar navbar-default" role="navigation"> 
+   <div class="container-fluid"> 
+    <div class="navbar-header"> 
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse"> <span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+     <a class="navbar-brand" href="#">ECharts模板可视化</a> 
+    </div> 
+    <div class="collapse navbar-collapse" id="example-navbar-collapse"> 
+     <ul class="nav navbar-nav"> 
+      <li><a href="javascript:to_line_chart()">折线图</a></li> 
+      <li><a href="javascript:to_pie_chart()">饼状图</a></li> 
+      <li><a href="javascript:to_bar_chart()">柱状图</a></li> 
+      <li><a href="javascript:to_gauge_chart()">仪表盘图</a></li> 
+      <li><a href="javascript:to_radar_chart()">雷达图</a></li> 
+      <li><a href="javascript:to_china_chart()">中国地图</a></li> 
+     </ul> 
+    </div> 
+   </div> 
+  </nav> 
+  <div class="container"> 
+   <br /> 
+   <div class="row"> 
+    <div id="main_chart" style="width: 100%; height: 400px;"> 
+    </div> 
+   </div> 
+   <hr>
+    <footer>
+       露禾版权所有 2017
+       <a href="">1909850650@qq.com</a>
+   </footer>
+  </div> 
+  <script src="js/lib/jquery-2.1.4.min.js"></script> 
+  <script src="js/lib/bootstrap.min.js"></script> 
+  <!-- 绘制数据图js --> 
+  <script type="text/javascript" src="js/lib/esl.js"></script> 
+  <script type="text/javascript" src="js/lib/echarts.template.js"></script> 
+  <!-- 应用js --> 
+  <script src="js/app/app.js"></script> 
+  <style type="text/css">
+  canvas {
+    border: 1px solid #ffffff;
+    margin: 5px;
+  }
+  </style>  
+ </body>
+</html>
